@@ -61,7 +61,7 @@ try:
         st.title("🧩 Category AI")
         st.write("This tool maps your needs to the official hierarchy using Semantic Search.")
         st.divider()
-        st.info("The AI understands context. Try searching for a 'problem' instead of a 'product'.")
+        st.info("The AI understands context. Try searching for a 'product' using product name or description.")
 
     # --- 4. MAIN INTERFACE ---
     st.title("🤖 Intelligent Product Mapper")
@@ -106,4 +106,5 @@ try:
 except FileNotFoundError:
     st.error("Error: 'Categorized_Product_List.csv' not found. Please upload the master CSV file to your GitHub.")
 except Exception as e:
+
     st.error(f"An error occurred: {e}")
